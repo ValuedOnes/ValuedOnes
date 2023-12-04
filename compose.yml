@@ -4,8 +4,5 @@ services:
       ./mysql-database
     ports:
       - 3306:3306
-  test:
-    build:
-      ./Learning
-    ports:
-      - 8000:8000
+    volumes:
+      - ./mysql-database/data:/var/lib/mysql
