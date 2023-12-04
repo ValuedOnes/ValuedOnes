@@ -1,0 +1,8 @@
+services:
+  mysql-db:
+    build:
+      ./mysql-database
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql-database/data:/var/lib/mysql
