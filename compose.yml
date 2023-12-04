@@ -1,0 +1,6 @@
+services:
+  mysql-db:
+    build:
+      ./mysql-database
+    ports:
+      - 3306:3306
