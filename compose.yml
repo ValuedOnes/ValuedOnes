@@ -4,8 +4,6 @@ services:
       ./mysql-database
     ports:
       - 3306:3306
-    volumes:
-      - ./mysql-database/data:/var/lib/mysql
   vo-admin:
     build:
       ./vo-admin
