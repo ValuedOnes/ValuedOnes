@@ -23,3 +23,11 @@ create table pay(
     username varchar(32),
     balance int
 );
+
+create table ordering(
+    id int auto_increment primary key,
+    buyer_id int,
+    payment_id int,
+    item_id int,
+    amount int
+);
